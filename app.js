@@ -6,6 +6,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static("storage"));
 
 const port = process.env.PORT || 3000; //constante de puerto //si existe la variable de entorno corre en el puerto predeterminado, si no corre en el puerto 3000
 
